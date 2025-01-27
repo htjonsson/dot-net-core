@@ -1,0 +1,6 @@
+https://www.c-sharpcorner.com/article/implementing-jwt-refresh-tokens-in-net-8-0/
+https://learn.microsoft.com/en-us/ef/core/get-started/overview/first-app?tabs=netcore-cli
+https://www.c-sharpcorner.com/blogs/jwt-authentication-in-asp-net-core-web-api
+https://medium.com/@solomongetachew112/jwt-authentication-in-net-8-a-complete-guide-for-secure-and-scalable-applications-6281e5e8667c
+https://github.com/manideep-bestshop/AspNetCoreTutorials/blob/master/JWTAuthenticationForProduct/Controllers/LoginController.cs
+https://medium.com/@solomongetachew112/best-practices-for-using-entity-framework-core-in-asp-net-core-applications-with-net-8-9e4d796c02ac

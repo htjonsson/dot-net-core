@@ -1,0 +1,27 @@
+POST http://localhost:5022/jwt/register
+content-type: application/json
+
+{
+    "username": "username",
+    "password": "password"
+}
+
+###
+
+POST http://localhost:5022/jwt/login
+content-type: application/json
+
+{
+    "username": "username",
+    "password": "password"
+}
+
+###
+
+POST http://localhost:5022/jwt/refresh
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJqdGkiOiIzN2I3Y2JlZC04YTE2LTQwZjEtOTI3Ni1mNDhiOGQ4ZmU4NDAiLCJuYmYiOjE3Mzc5OTUwMDYsImV4cCI6MTczNzk5NTYwNiwiaWF0IjoxNzM3OTk1MDA2fQ.zVK9FC6takDtdySpIMy5qpFLQjz5OxkdaUFlBG43jqA
+
+{
+    "refreshToken": "vngHyMp8WPQWCVKcRlwjkMfTCtrmnq2PdgHeat3hrc4="
+}
