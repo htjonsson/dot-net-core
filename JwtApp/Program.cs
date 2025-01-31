@@ -36,6 +36,8 @@ JwtApp.JwtHelper.AddAuthentication(builder);
 
 var app = builder.Build();
 
+DataContext.CreateDatabase(app);
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

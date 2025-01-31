@@ -40,18 +40,4 @@ public class DataContext : DbContext
     }
 
     #endregion
-
-    // public string Path { get; }
-
-    // public DataContext()
-    // {
-    //     var folder = Environment.SpecialFolder.LocalApplicationData;
-    //     var path = Environment.GetFolderPath(folder);
-
-    //     this.Path = System.IO.Path.Join(path, "db.sqlite");
-
-    //     System.Console.WriteLine(this.Path);
-    // }
-
-    // protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlite($"Data Source={this.Path}");
 }

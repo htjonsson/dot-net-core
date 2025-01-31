@@ -29,4 +29,8 @@ public class JwtToken
 
     [Column("expires_at")]
     public DateTime Expires { get; set; }
+
+    [Column("refresh_token")]
+    [MaxLength(32)]
+    public string RefreshToken { get; set; } = string.Empty;
 }

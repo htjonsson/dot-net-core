@@ -72,12 +72,6 @@ public class JwtController : ControllerBase
         
         #endregion
 
-        // #region Get data out of the token
-
-        // JwtHelper.Decode(accessToken);
-
-        // #endregion
-
         var response = new JwtTokenResponse
         {
             AccessToken = accessToken,
@@ -118,7 +112,6 @@ public class JwtController : ControllerBase
         var jti = GetJti();
 
         _userService.RevokeRefreshToken(jti);
-        // _userService.RevokeAccessToken(jti);
 
         return Ok();
     }     

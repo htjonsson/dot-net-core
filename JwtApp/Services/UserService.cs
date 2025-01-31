@@ -1,3 +1,4 @@
+using System.Text;
 using JwtApp.Models;
 
 namespace JwtApp.Services;
@@ -48,12 +49,16 @@ public class UserService : IUserService
 
     public void SaveRefreshToken(string jti, string refreshToken)
     {
+        // Convert refreshToken arg, from base64 to a string of ASCII
+        var bytes = Convert.FromBase64String(refreshToken);
+        var token = Encoding.Default.GetString(bytes);
+
         var jwtToken  = new JwtToken()
         {
             // UserId = userId,
-            // Jti = jti,
+            Jti = jti,
             // Type = JwtType.RefreshToken.ToString(),
-            // Token = refreshToken
+            RefreshToken = token
         };
 
         _context.JwtTokens.Add(jwtToken);
